@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Singh | Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f0e8;
+            color: #292820;
+        }
+
+        header {
+            background-color: #292820;
+            color: #f4f0e8;
+            padding: 20px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h3 {
+            color: #d18a65;
+        }
+
+        nav a {
+            color: #f4f0e8;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d18a65;
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 60px 8%;
+        }
+
+        .intro h1 {
+            font-family: Georgia, serif;
+            font-size: 55px;
+            margin: 10px 0;
+        }
+
+        .intro h1 span {
+            color: #b65c3b;
+        }
+
+        .intro p {
+            color: #6d6a60;
+            line-height: 1.7;
+        }
+
+        .intro img {
+            width: 230px;
+            height: 280px;
+            object-fit: cover;
+            border: 5px solid #d9c8b2;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #b65c3b;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .button:hover {
+            background-color: #91452c;
+        }
+
+        section {
+            padding: 35px 8%;
+        }
+
+        section h2 {
+            font-family: Georgia, serif;
+            font-size: 30px;
+            border-bottom: 2px solid #d9c8b2;
+            padding-bottom: 10px;
+        }
+
+        section p {
+            line-height: 1.8;
+            color: #6d6a60;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills div {
+            background-color: #e5dbcc;
+            padding: 15px 25px;
+            border-radius: 4px;
+        }
+
+        .project {
+            background-color: #e5dbcc;
+            padding: 20px;
+            margin: 18px 0;
+            border-left: 4px solid #5a0a9b;
+        }
+
+        .project h3 {
+            font-family: Georgia, serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #d9c8b2;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e5dbcc;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: #2417da;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #292820;
+            color: #f4f0e8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .intro {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .intro h1 {
+                font-size: 42px;
+            }
+
+            .intro img {
+                width: 200px;
+                height: 240px;
+            }
+
+            section {
+                padding: 25px 6%;
+            }
+
+            table {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <nav>
+
+            <div>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- INTRODUCTION -->
+
+    <div class="intro">
+
+        <div>
+
+            <h1>Hello, I'm<br><span>Satyam Singh.</span></h1>
+
+            <p>
+                A curious student who enjoys technology, creativity,
+                and learning how things work.
+            </p>
+
+            <a href="#projects" class="button">View My Projects</a>
+        </div>
+
+        <img src="me.jpeg" alt="Satyam Singh">
+    </div>
+
+    <!-- ABOUT ME -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I'm pursuing B.Sc. Computer Science and Data Science at
+            CHRIST (Deemed to be University), Pune Lavasa Campus.
+            I enjoy exploring technology, creating websites, and
+            learning new skills.
+        </p>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Python</div>
+            <div>SQL</div>
+            <div>JavaScript</div>
+            <div>C Programming</div>
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>01. Student Task Tracker</h3>
+
+            <p>
+                A simple website idea to help students organize
+                assignments, manage tasks, and remember deadlines.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>02. Data Insight Dashboard</h3>
+
+            <p>
+                A beginner data analysis project that explores
+                datasets and presents useful information through
+                charts and summaries.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <table>
+            <tr>
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Percentage</th>
+            </tr>
+
+            <tr>
+                <td>Class 10</td>
+                <td>Salvation Tree School</td>
+                <td>2023</td>
+                <td>95%</td>
+            </tr>
+
+            <tr>
+                <td>Class 12</td>
+                <td>Salvation Tree School</td>
+                <td>2025</td>
+                <td>90%</td>
+            </tr>
+
+            <tr>
+                <td>B.Sc. CS & DS</td>
+                <td>CHRIST University, Pune Lavasa</td>
+                <td>2026 - Present</td>
+                <td>Pursuing</td>
+            </tr>
+        </table>
+
+    </section>
+
+    <!-- HOBBIES -->
+
+    <section>
+
+        <h2>My Interests</h2>
+
+        <div class="skills">
+            <div>Reading</div>
+            <div>Coding</div>
+            <div>Travelling</div>
+            <div>Sketching</div>
+        </div>
+
+    </section>
+
+    <!-- CLUBS -->
+
+    <section>
+
+        <h2>Clubs & Centres</h2>
+
+        <div class="project">
+            <h3>Women Empowerment Cell</h3>
+            <p>
+                Interested in supporting awareness, inclusivity,
+                and initiatives that promote gender equality.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Infotech (Area of Interest)</h3>
+            <p>
+                Interested in technology, innovation, and
+                developing technical skills through activities.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>SWO Fashion (Area of Interest)</h3>
+            <p>
+                Interested in creativity, fashion, and
+                self-expression through collaborative activities.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- SOCIAL MEDIA -->
+
+    <section>
+
+        <h2>Find Me Online</h2>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank">Instagram ↗</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a>
+            <a href="https://github.com/" target="_blank">GitHub ↗</a>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            Email: singhsatyam37479@gmail.com
+        </p>
+
+        <p>
+            Phone: 7982348204
+        </p>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Satyam Singh</p>
+    </footer>
+
+</body>
+</html>
